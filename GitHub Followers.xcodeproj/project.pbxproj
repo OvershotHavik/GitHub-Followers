@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		B361363D27C524BD007D0199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361363C27C524BD007D0199 /* AppDelegate.swift */; };
 		B361363F27C524BD007D0199 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361363E27C524BD007D0199 /* SceneDelegate.swift */; };
-		B361364127C524BD007D0199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361364027C524BD007D0199 /* ViewController.swift */; };
 		B361364627C524BF007D0199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B361364527C524BF007D0199 /* Assets.xcassets */; };
 		B361364927C524BF007D0199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B361364727C524BF007D0199 /* LaunchScreen.storyboard */; };
 		B361365427C524C0007D0199 /* GitHub_FollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361365327C524C0007D0199 /* GitHub_FollowersTests.swift */; };
 		B361365E27C524C0007D0199 /* GitHub_FollowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361365D27C524C0007D0199 /* GitHub_FollowersUITests.swift */; };
 		B361366027C524C0007D0199 /* GitHub_FollowersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361365F27C524C0007D0199 /* GitHub_FollowersUITestsLaunchTests.swift */; };
+		B361366D27C52B92007D0199 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361366C27C52B92007D0199 /* SearchVC.swift */; };
+		B361366F27C52BC6007D0199 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361366E27C52BC6007D0199 /* FavoritesListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		B361363927C524BD007D0199 /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B361363C27C524BD007D0199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B361363E27C524BD007D0199 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B361364027C524BD007D0199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B361364527C524BF007D0199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B361364827C524BF007D0199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B361364A27C524BF007D0199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		B361365927C524C0007D0199 /* GitHub FollowersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitHub FollowersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B361365D27C524C0007D0199 /* GitHub_FollowersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_FollowersUITests.swift; sourceTree = "<group>"; };
 		B361365F27C524C0007D0199 /* GitHub_FollowersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_FollowersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B361366C27C52B92007D0199 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		B361366E27C52BC6007D0199 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 			children = (
 				B361363C27C524BD007D0199 /* AppDelegate.swift */,
 				B361363E27C524BD007D0199 /* SceneDelegate.swift */,
-				B361364027C524BD007D0199 /* ViewController.swift */,
 				B361364527C524BF007D0199 /* Assets.xcassets */,
 				B361364727C524BF007D0199 /* LaunchScreen.storyboard */,
 				B361364A27C524BF007D0199 /* Info.plist */,
+				B361366C27C52B92007D0199 /* SearchVC.swift */,
+				B361366E27C52BC6007D0199 /* FavoritesListVC.swift */,
 			);
 			path = "GitHub Followers";
 			sourceTree = "<group>";
@@ -254,7 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B361364127C524BD007D0199 /* ViewController.swift in Sources */,
+				B361366F27C52BC6007D0199 /* FavoritesListVC.swift in Sources */,
+				B361366D27C52B92007D0199 /* SearchVC.swift in Sources */,
 				B361363D27C524BD007D0199 /* AppDelegate.swift in Sources */,
 				B361363F27C524BD007D0199 /* SceneDelegate.swift in Sources */,
 			);
