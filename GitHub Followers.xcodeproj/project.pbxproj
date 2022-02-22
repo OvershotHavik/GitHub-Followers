@@ -31,6 +31,7 @@
 		B361369027C56DB5007D0199 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361368F27C56DB5007D0199 /* ErrorMessage.swift */; };
 		B361369327C572E8007D0199 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361369227C572E8007D0199 /* FollowerCell.swift */; };
 		B361369527C57368007D0199 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361369427C57368007D0199 /* GFAvatarImageView.swift */; };
+		B361369727C58880007D0199 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361369627C58880007D0199 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		B361368F27C56DB5007D0199 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		B361369227C572E8007D0199 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		B361369427C57368007D0199 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		B361369627C58880007D0199 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B361368F27C56DB5007D0199 /* ErrorMessage.swift */,
+				B361369627C58880007D0199 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				B361368527C55B57007D0199 /* GFAlertContainerView.swift in Sources */,
 				B361368827C55FFD007D0199 /* Follower.swift in Sources */,
 				B361369527C57368007D0199 /* GFAvatarImageView.swift in Sources */,
+				B361369727C58880007D0199 /* UIHelper.swift in Sources */,
 				B361367327C53689007D0199 /* GFTextField.swift in Sources */,
 				B361367527C54039007D0199 /* FollowersListVC.swift in Sources */,
 				B361368D27C564D6007D0199 /* NetworkManager.swift in Sources */,
