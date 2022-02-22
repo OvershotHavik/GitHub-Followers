@@ -28,6 +28,7 @@
 		B361368827C55FFD007D0199 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361368727C55FFD007D0199 /* Follower.swift */; };
 		B361368A27C560E6007D0199 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361368927C560E6007D0199 /* User.swift */; };
 		B361368D27C564D6007D0199 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361368C27C564D6007D0199 /* NetworkManager.swift */; };
+		B361369027C56DB5007D0199 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361368F27C56DB5007D0199 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		B361368727C55FFD007D0199 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		B361368927C560E6007D0199 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B361368C27C564D6007D0199 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B361368F27C56DB5007D0199 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		B361363B27C524BD007D0199 /* GitHub Followers */ = {
 			isa = PBXGroup;
 			children = (
+				B361368E27C56D4E007D0199 /* Utilities */,
 				B361368B27C56449007D0199 /* Managers */,
 				B361368627C55F7E007D0199 /* Model */,
 				B361364A27C524BF007D0199 /* Info.plist */,
@@ -209,6 +212,14 @@
 				B361368C27C564D6007D0199 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		B361368E27C56D4E007D0199 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B361368F27C56DB5007D0199 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				B361367D27C549A5007D0199 /* GFAlertVC.swift in Sources */,
 				B361363D27C524BD007D0199 /* AppDelegate.swift in Sources */,
 				B361367927C54761007D0199 /* GFTitleLabel.swift in Sources */,
+				B361369027C56DB5007D0199 /* ErrorMessage.swift in Sources */,
 				B361367727C54433007D0199 /* String+Ext.swift in Sources */,
 				B361363F27C524BD007D0199 /* SceneDelegate.swift in Sources */,
 				B361367B27C548DF007D0199 /* GFBodyLabel.swift in Sources */,
