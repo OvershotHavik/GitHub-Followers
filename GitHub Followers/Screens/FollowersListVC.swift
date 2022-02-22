@@ -8,14 +8,23 @@
 import UIKit
 
 class FollowersListVC: UIViewController {
+    enum Section {
+        case main
+    }
+    
     var username: String!
+    var followers: [Follower] = []
+    
+    
     var collectionView: UICollectionView!
+    var dataSource : UICollectionViewDiffableDataSource<Section, Follower>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureVC()
         configureCollectionView()
         getFollowers()
+        configureDataSource()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +42,7 @@ class FollowersListVC: UIViewController {
     func configureCollectionView(){
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemPink
+        collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
@@ -58,10 +67,31 @@ class FollowersListVC: UIViewController {
             switch result{
             case .success(let followers):
                 print("Followers count: \(followers.count)")
-                print(followers)
+                self.followers = followers
+                self.updateData()
+                
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "")
             }
         }
+    }
+    
+    
+    func configureDataSource(){
+        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
+            cell.set(follower: follower)
+            return cell
+        })
+    }
+    
+    func updateData(){
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(followers)
+        DispatchQueue.main.async {
+            self.dataSource.apply(snapshot, animatingDifferences: true)
+        }
+        
     }
 }

@@ -26,7 +26,7 @@ class FollowerCell: UICollectionViewCell {
     
     func set(follower: Follower){
         userNameLabel.text = follower.login
-        
+        //image assignment
     }
     
     private func configure(){
@@ -35,14 +35,14 @@ class FollowerCell: UICollectionViewCell {
         
         let padding: CGFloat = 8
         NSLayoutConstraint.activate([
-            avatarIV.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
-            avatarIV.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            avatarIV.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            avatarIV.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
+            avatarIV.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
+            avatarIV.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
             avatarIV.heightAnchor.constraint(equalTo: avatarIV.widthAnchor),
             
             userNameLabel.topAnchor.constraint(equalTo: avatarIV.bottomAnchor, constant: 12),
-            userNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            userNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            userNameLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: padding),
+            userNameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
             userNameLabel.heightAnchor.constraint(equalToConstant: 20)
         ])
     }
