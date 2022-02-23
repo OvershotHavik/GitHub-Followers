@@ -1,5 +1,5 @@
 //
-//  ErrorMessages.swift
+//  GFError.swift
 //  GitHub Followers
 //
 //  Created by Steve Plavetzky on 2/22/22.
