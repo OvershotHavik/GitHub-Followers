@@ -38,6 +38,7 @@
 		B36136A627C6825E007D0199 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136A527C6825E007D0199 /* GFSecondaryTitleLabel.swift */; };
 		B36136A827C688CA007D0199 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136A727C688CA007D0199 /* Constants.swift */; };
 		B36136AA27C6906B007D0199 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136A927C6906B007D0199 /* GFItemInfoView.swift */; };
+		B36136AC27C6948A007D0199 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136AB27C6948A007D0199 /* GFItemInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		B36136A527C6825E007D0199 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		B36136A727C688CA007D0199 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B36136A927C6906B007D0199 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
+		B36136AB27C6948A007D0199 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 			children = (
 				B361367C27C549A5007D0199 /* GFAlertVC.swift */,
 				B36136A327C681FA007D0199 /* GFUserInfoHeaderVC.swift */,
+				B36136AB27C6948A007D0199 /* GFItemInfoVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				B361367527C54039007D0199 /* FollowersListVC.swift in Sources */,
 				B361368D27C564D6007D0199 /* NetworkManager.swift in Sources */,
 				B36136AA27C6906B007D0199 /* GFItemInfoView.swift in Sources */,
+				B36136AC27C6948A007D0199 /* GFItemInfoVC.swift in Sources */,
 				B361367F27C54F3C007D0199 /* UIViewController+Ext.swift in Sources */,
 				B361366F27C52BC6007D0199 /* FavoritesListVC.swift in Sources */,
 				B361367127C5335C007D0199 /* GFButton.swift in Sources */,
