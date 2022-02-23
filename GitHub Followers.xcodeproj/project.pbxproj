@@ -43,6 +43,7 @@
 		B36136B027C698D9007D0199 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136AF27C698D9007D0199 /* GFFollowerItemVC.swift */; };
 		B36136B327C69E63007D0199 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B227C69E63007D0199 /* Date+Ext.swift */; };
 		B36136B527C6B145007D0199 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B427C6B145007D0199 /* PersistenceManager.swift */; };
+		B36136B727C6B9DD007D0199 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B627C6B9DD007D0199 /* FavoriteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		B36136AF27C698D9007D0199 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		B36136B227C69E63007D0199 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		B36136B427C6B145007D0199 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		B36136B627C6B9DD007D0199 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				B361369227C572E8007D0199 /* FollowerCell.swift */,
+				B36136B627C6B9DD007D0199 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				B36136AA27C6906B007D0199 /* GFItemInfoView.swift in Sources */,
 				B36136AC27C6948A007D0199 /* GFItemInfoVC.swift in Sources */,
 				B36136B527C6B145007D0199 /* PersistenceManager.swift in Sources */,
+				B36136B727C6B9DD007D0199 /* FavoriteCell.swift in Sources */,
 				B361367F27C54F3C007D0199 /* UIViewController+Ext.swift in Sources */,
 				B361366F27C52BC6007D0199 /* FavoritesListVC.swift in Sources */,
 				B36136AE27C69749007D0199 /* GFRepoItemVC.swift in Sources */,
