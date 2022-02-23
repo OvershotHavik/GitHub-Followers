@@ -41,6 +41,7 @@
 		B36136AC27C6948A007D0199 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136AB27C6948A007D0199 /* GFItemInfoVC.swift */; };
 		B36136AE27C69749007D0199 /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136AD27C69749007D0199 /* GFRepoItemVC.swift */; };
 		B36136B027C698D9007D0199 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136AF27C698D9007D0199 /* GFFollowerItemVC.swift */; };
+		B36136B327C69E63007D0199 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B227C69E63007D0199 /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		B36136AB27C6948A007D0199 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 		B36136AD27C69749007D0199 /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
 		B36136AF27C698D9007D0199 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
+		B36136B227C69E63007D0199 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				B361367E27C54F3C007D0199 /* UIViewController+Ext.swift */,
 				B361367627C54433007D0199 /* String+Ext.swift */,
+				B36136B227C69E63007D0199 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				B361367327C53689007D0199 /* GFTextField.swift in Sources */,
 				B361367527C54039007D0199 /* FollowersListVC.swift in Sources */,
 				B361368D27C564D6007D0199 /* NetworkManager.swift in Sources */,
+				B36136B327C69E63007D0199 /* Date+Ext.swift in Sources */,
 				B36136AA27C6906B007D0199 /* GFItemInfoView.swift in Sources */,
 				B36136AC27C6948A007D0199 /* GFItemInfoVC.swift in Sources */,
 				B361367F27C54F3C007D0199 /* UIViewController+Ext.swift in Sources */,
