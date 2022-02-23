@@ -45,6 +45,7 @@
 		B36136B527C6B145007D0199 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B427C6B145007D0199 /* PersistenceManager.swift */; };
 		B36136B727C6B9DD007D0199 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B627C6B9DD007D0199 /* FavoriteCell.swift */; };
 		B36136BA27C6C703007D0199 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B927C6C703007D0199 /* GFTabBarController.swift */; };
+		B36136BC27C6D644007D0199 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		B36136B427C6B145007D0199 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		B36136B627C6B9DD007D0199 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		B36136B927C6C703007D0199 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
+		B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +312,7 @@
 				B36136B127C6992C007D0199 /* Item Info VC */,
 				B361367C27C549A5007D0199 /* GFAlertVC.swift */,
 				B36136A327C681FA007D0199 /* GFUserInfoHeaderVC.swift */,
+				B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				B361369527C57368007D0199 /* GFAvatarImageView.swift in Sources */,
 				B36136B027C698D9007D0199 /* GFFollowerItemVC.swift in Sources */,
 				B361369727C58880007D0199 /* UIHelper.swift in Sources */,
+				B36136BC27C6D644007D0199 /* GFDataLoadingVC.swift in Sources */,
 				B361367327C53689007D0199 /* GFTextField.swift in Sources */,
 				B361367527C54039007D0199 /* FollowersListVC.swift in Sources */,
 				B361368D27C564D6007D0199 /* NetworkManager.swift in Sources */,
