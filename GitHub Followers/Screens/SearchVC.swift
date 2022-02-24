@@ -11,7 +11,7 @@ class SearchVC: UIViewController {
     
     let logoIV = UIImageView()
     let userNameTF = GFTextField()
-    let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    let callToActionButton = GFButton(color: .systemGreen, title: "Get Followers", image: SFSymbols.search!)
 
     var isUsernameEntered: Bool{
         //if usernameTF is empty, meaning nothing in it, return false, otherwise return true
