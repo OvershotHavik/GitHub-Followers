@@ -42,23 +42,14 @@ class GFUserInfoHeaderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        addSubViews()
+        view.addSubviews(avatarIV, usernameLabel, nameLabel, locationIV, locationLabel, bioLabel)
         setupConstraints()
         configureUIElements()
     }
     
-    
-    func addSubViews(){
-        view.addSubview(avatarIV)
-        view.addSubview(usernameLabel)
-        view.addSubview(nameLabel)
-        view.addSubview(locationIV)
-        locationIV.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(locationLabel)
-        view.addSubview(bioLabel)
-    }
-    
     func setupConstraints(){
+        locationIV.translatesAutoresizingMaskIntoConstraints = false
+
         let padding: CGFloat = 20
         let textImagePadding: CGFloat = 12
         

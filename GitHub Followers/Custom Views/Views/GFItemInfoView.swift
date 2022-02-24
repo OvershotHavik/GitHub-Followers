@@ -29,13 +29,10 @@ class GFItemInfoView: UIView {
     
     
     private func configure(){
-        addSubview(symbolIV)
+        addSubviews(symbolIV, titleLabel, countLabel)
         symbolIV.translatesAutoresizingMaskIntoConstraints = false
         symbolIV.contentMode = .scaleAspectFill
         symbolIV.tintColor = .label
-        
-        addSubview(titleLabel)
-        addSubview(countLabel)
         
         NSLayoutConstraint.activate([
             symbolIV.topAnchor.constraint(equalTo: self.topAnchor),

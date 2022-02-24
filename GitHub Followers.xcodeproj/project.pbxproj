@@ -46,6 +46,7 @@
 		B36136B727C6B9DD007D0199 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B627C6B9DD007D0199 /* FavoriteCell.swift */; };
 		B36136BA27C6C703007D0199 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B927C6C703007D0199 /* GFTabBarController.swift */; };
 		B36136BC27C6D644007D0199 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */; };
+		B36136BE27C7C580007D0199 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136BD27C7C580007D0199 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		B36136B627C6B9DD007D0199 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		B36136B927C6C703007D0199 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
+		B36136BD27C7C580007D0199 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				B361367E27C54F3C007D0199 /* UIViewController+Ext.swift */,
 				B361367627C54433007D0199 /* String+Ext.swift */,
 				B36136B227C69E63007D0199 /* Date+Ext.swift */,
+				B36136BD27C7C580007D0199 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				B361367727C54433007D0199 /* String+Ext.swift in Sources */,
 				B361363F27C524BD007D0199 /* SceneDelegate.swift in Sources */,
 				B361367B27C548DF007D0199 /* GFBodyLabel.swift in Sources */,
+				B36136BE27C7C580007D0199 /* UIView+Ext.swift in Sources */,
 				B36136A227C6781F007D0199 /* UserInfoVC.swift in Sources */,
 				B36136BA27C6C703007D0199 /* GFTabBarController.swift in Sources */,
 			);

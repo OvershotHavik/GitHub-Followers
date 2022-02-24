@@ -179,7 +179,6 @@ extension FollowersListVC: UICollectionViewDelegate{
         let navController = UINavigationController(rootViewController: destVC)
         
         present(navController, animated: true)
-                
     }
 }
 
