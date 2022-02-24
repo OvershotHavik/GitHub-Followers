@@ -12,10 +12,12 @@ class FavoriteCell: UITableViewCell {
     let avatarIV = GFAvatarImageView(frame: .zero)
     let userNameLabel = GFTitleLabel(textAlignment: .left, fontSize: 26)
     
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configure()
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -26,6 +28,7 @@ class FavoriteCell: UITableViewCell {
         userNameLabel.text = favorite.login
         avatarIV.downloadImage(from: favorite.avatarUrl)
     }
+    
     
     private func configure(){
         addSubviews(avatarIV, userNameLabel)

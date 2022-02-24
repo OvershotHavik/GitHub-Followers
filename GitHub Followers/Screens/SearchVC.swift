@@ -8,12 +8,11 @@
 import UIKit
 
 class SearchVC: UIViewController {
-
+    
     let logoIV = UIImageView()
     let userNameTF = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
-    var logoImageViewTopConstraint: NSLayoutConstraint!
-    
+
     var isUsernameEntered: Bool{
         //if usernameTF is empty, meaning nothing in it, return false, otherwise return true
         return !userNameTF.text!.isEmpty
@@ -36,7 +35,7 @@ class SearchVC: UIViewController {
         userNameTF.text = ""
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
-
+    
     
     func createDismissKeyboardTapGesture(){
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
@@ -61,12 +60,10 @@ class SearchVC: UIViewController {
         logoIV.image = Images.ghLogo
         
         let topConstraintConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8PlusZoomed ? 20 : 80
-        logoImageViewTopConstraint = logoIV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstraintConstant)
-        logoImageViewTopConstraint.isActive = true
         
         NSLayoutConstraint.activate([
             //y, x, width, hight. should have 4 constraints per item when appropriate
-//            logoIV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+            logoIV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstraintConstant),
             logoIV.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoIV.heightAnchor.constraint(equalToConstant: 200),
             logoIV.widthAnchor.constraint(equalToConstant: 200)
@@ -96,8 +93,6 @@ class SearchVC: UIViewController {
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
-    
-    
 }
 
 extension SearchVC: UITextFieldDelegate{

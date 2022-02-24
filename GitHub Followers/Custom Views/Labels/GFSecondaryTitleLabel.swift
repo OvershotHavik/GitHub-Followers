@@ -32,5 +32,4 @@ class GFSecondaryTitleLabel: UILabel {
         minimumScaleFactor = 0.9
         lineBreakMode = .byTruncatingTail
     }
-    
 }

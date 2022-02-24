@@ -20,6 +20,7 @@ class GFAlertVC: UIViewController {
     
     let padding: CGFloat = 20
     
+    
     init(alertTitle: String, message: String, buttonTitle: String){
         super.init(nibName: nil, bundle: nil)
         self.alertTitle = alertTitle
@@ -36,13 +37,14 @@ class GFAlertVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+        
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
         configureMessageLabel()
     }
-
-
+    
+    
     func configureContainerView(){
         view.addSubview(containerView)
         
@@ -66,6 +68,7 @@ class GFAlertVC: UIViewController {
             titleLabel.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
+    
     
     func configureActionButton(){
         containerView.addSubview(actionButton)
@@ -93,6 +96,8 @@ class GFAlertVC: UIViewController {
             messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
         ])
     }
+    
+    
     @objc func dismissVC(){
         dismiss(animated: true)
     }

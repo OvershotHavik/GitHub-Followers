@@ -36,14 +36,12 @@ class GFEmptyStateView: UIView {
         logoIV.image = Images.emptyStateLogo
         
         let logoBottomConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? -140 : 40
-        let logoIVBottomConstraint = logoIV.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: logoBottomConstant)
-        logoIVBottomConstraint.isActive = true
-        
         
         NSLayoutConstraint.activate([
             logoIV.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
             logoIV.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
             logoIV.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 200),
+            logoIV.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: logoBottomConstant)
         ])
     }
     
@@ -54,13 +52,12 @@ class GFEmptyStateView: UIView {
         messageLabel.textColor = .secondaryLabel
         
         let labelCenterYConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? -50 : -150
-        let messageLabelCenterYConstraint = messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: labelCenterYConstant)
-        messageLabelCenterYConstraint.isActive = true
+        
         NSLayoutConstraint.activate([
+            messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: labelCenterYConstant),
             messageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
             messageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
             messageLabel.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
-    
 }

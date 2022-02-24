@@ -8,7 +8,7 @@
 import UIKit
 
 class GFUserInfoHeaderVC: UIViewController {
-
+    
     let avatarIV = GFAvatarImageView(frame: .zero)
     let usernameLabel = GFTitleLabel(textAlignment: .left, fontSize: 34)
     let nameLabel = GFSecondaryTitleLabel(fontSize: 18)
@@ -18,14 +18,17 @@ class GFUserInfoHeaderVC: UIViewController {
     
     var user: User!
     
+    
     init(user: User){
         super.init(nibName: nil, bundle: nil)
         self.user = user
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     func configureUIElements(){
         avatarIV.downloadImage(from: user.avatarUrl)
@@ -39,6 +42,7 @@ class GFUserInfoHeaderVC: UIViewController {
         locationIV.tintColor = .secondaryLabel
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -47,12 +51,12 @@ class GFUserInfoHeaderVC: UIViewController {
         configureUIElements()
     }
     
+    
     func setupConstraints(){
         locationIV.translatesAutoresizingMaskIntoConstraints = false
-
+        
         let padding: CGFloat = 20
         let textImagePadding: CGFloat = 12
-        
         
         NSLayoutConstraint.activate([
             avatarIV.topAnchor.constraint(equalTo: view.topAnchor, constant: padding),
@@ -79,7 +83,7 @@ class GFUserInfoHeaderVC: UIViewController {
             locationLabel.leadingAnchor.constraint(equalTo: locationIV.trailingAnchor, constant: 5),
             locationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             locationLabel.heightAnchor.constraint(equalToConstant: 20),
-
+            
             bioLabel.topAnchor.constraint(equalTo: avatarIV.bottomAnchor, constant: textImagePadding),
             bioLabel.leadingAnchor.constraint(equalTo: avatarIV.leadingAnchor),
             bioLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
