@@ -47,6 +47,7 @@
 		B36136BA27C6C703007D0199 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136B927C6C703007D0199 /* GFTabBarController.swift */; };
 		B36136BC27C6D644007D0199 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */; };
 		B36136BE27C7C580007D0199 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136BD27C7C580007D0199 /* UIView+Ext.swift */; };
+		B36136C027C7CEBC007D0199 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36136BF27C7CEBC007D0199 /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		B36136B927C6C703007D0199 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		B36136BB27C6D644007D0199 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 		B36136BD27C7C580007D0199 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		B36136BF27C7CEBC007D0199 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				B361367627C54433007D0199 /* String+Ext.swift */,
 				B36136B227C69E63007D0199 /* Date+Ext.swift */,
 				B36136BD27C7C580007D0199 /* UIView+Ext.swift */,
+				B36136BF27C7CEBC007D0199 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				B361367127C5335C007D0199 /* GFButton.swift in Sources */,
 				B361366D27C52B92007D0199 /* SearchVC.swift in Sources */,
 				B361368A27C560E6007D0199 /* User.swift in Sources */,
+				B36136C027C7CEBC007D0199 /* UITableView+Ext.swift in Sources */,
 				B361367D27C549A5007D0199 /* GFAlertVC.swift in Sources */,
 				B36136A627C6825E007D0199 /* GFSecondaryTitleLabel.swift in Sources */,
 				B361369327C572E8007D0199 /* FollowerCell.swift in Sources */,
